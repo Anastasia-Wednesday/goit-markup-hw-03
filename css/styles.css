@@ -1,0 +1,307 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #757575;
+}
+
+/* header */
+.logo {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: black;
+}
+
+.logo-web-part {
+  color: #2196f3;
+}
+
+.logo:hover,
+.logo:focus {
+  color: black;
+}
+
+.main-navigation {
+  list-style-type: none;
+}
+
+.main-navigation-item {
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  color: #212121;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.header-contacts {
+  list-style-type: none;
+}
+
+.header-contact-item {
+  font-family: 'Roboto';
+  color: #757575;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.main-navigation-item:hover,
+.main-navigation-item:focus {
+  color: #2196f3;
+}
+
+.header-contact-item:hover,
+.header-contact-item:focus {
+  color: #2196f3;
+}
+
+/* hero */
+.hero {
+  background: #2f303a;
+}
+
+.hero-header {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero-button {
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  border: 0;
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background: #1e84d7;
+}
+
+/* features */
+.features {
+  list-style-type: none;
+}
+
+.features-header {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.features-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/* work directions */
+.work-direction-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.work-direction {
+  list-style-type: none;
+}
+
+/* team */
+.team {
+  background: #f5f4fa;
+}
+
+.team-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.team-members {
+  list-style-type: none;
+}
+
+.team-member {
+  width: 270px;
+  height: 368px;
+  left: 215px;
+  top: 1635px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-member-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.team-member-occupation {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/* footer */
+.footer {
+  background: #2f303a;
+}
+
+.logo-inv {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: white;
+}
+
+.footer-contacts {
+  list-style-type: none;
+}
+
+.footer-adress,
+.footer-mail,
+.footer-phone {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.footer-adress {
+  font-style: normal;
+}
+
+.footer-mail,
+.footer-phone {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+}
+
+.footer-adress:hover,
+.footer-mail:hover,
+.footer-phone:hover,
+.footer-adress:focus,
+.footer-mail:focus,
+.footer-phone:focus {
+  color: #2196f3;
+}
+
+/* portfolio */
+
+/* work-examples */
+.work-examples-header {
+  display: none;
+}
+
+.work-examples-filter {
+  list-style-type: none;
+}
+
+.work-examples-filter-button {
+  background: #f5f4fa;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  border: 0;
+  cursor: pointer;
+}
+
+.work-examples-filter-button:hover,
+.work-examples-filter-button:focus {
+  background: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.work-examples-list {
+  list-style-type: none;
+}
+
+.work-example-item {
+  text-decoration: none;
+  box-sizing: border-box;
+  width: 370px;
+  height: 404px;
+  left: 215px;
+  top: 262px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+
+.work-example-image {
+}
+
+.work-example-header {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.work-example-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #757575;
+  text-decoration: none;
+}
