@@ -1,12 +1,10 @@
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #757575;
 }
 
 .container {
   width: 1200px;
-  outline: 1px solid teal;
   margin: 0 auto;
 }
 
@@ -30,6 +28,7 @@ p {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: black;
+  padding-left: 15px;
 }
 
 .logo-web-part {
@@ -41,11 +40,33 @@ p {
   color: black;
 }
 
-.main-navigation {
-  list-style-type: none;
+.page-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 
-.main-navigation-item {
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav-list {
+  list-style-type: none;
+  display: flex;
+  margin-left: 93px;
+  padding-left: 0;
+}
+
+.main-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-contact-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.main-navigation-link {
   text-decoration: none;
   font-family: 'Roboto';
   font-style: normal;
@@ -58,9 +79,13 @@ p {
 
 .header-contacts {
   list-style-type: none;
+  display: flex;
+  padding-left: 0;
+  margin-left: auto;
+  padding-right: 15px;
 }
 
-.header-contact-item {
+.header-contact-link {
   font-family: 'Roboto';
   color: #757575;
   text-decoration: none;
@@ -71,13 +96,13 @@ p {
   letter-spacing: 0.02em;
 }
 
-.main-navigation-item:hover,
-.main-navigation-item:focus {
+.main-navigation-link:hover,
+.main-navigation-link:focus {
   color: #2196f3;
 }
 
-.header-contact-item:hover,
-.header-contact-item:focus {
+.header-contact-link:hover,
+.header-contact-link:focus {
   color: #2196f3;
 }
 
@@ -135,9 +160,12 @@ p {
 
 .features {
   list-style-type: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .features-header {
+  font-family: Roboto;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -149,15 +177,23 @@ p {
 }
 
 .features-text {
+  font-family: Roboto;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
+  width: 270px;
 }
 
 /* work directions */
+
+.work-dir-section {
+  padding-bottom: 94px;
+}
+
 .work-direction-header {
+  font-family: Roboto;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -171,15 +207,23 @@ p {
   list-style-type: none;
   margin-top: 0;
   margin-bottom: 0;
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  justify-content: space-between;
 }
 
 /* team */
 .team {
   background: #f5f4fa;
-  padding: 94px 215px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .team-header {
+  font-family: Roboto;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -193,10 +237,15 @@ p {
   list-style-type: none;
   margin-top: 0;
   margin-bottom: 0;
-  margin: 0;
+  margin-left: 0;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
 }
 
 .team-member {
+  margin-left: 15px;
+  margin-right: 15px;
   width: 270px;
   height: 368px;
   left: 215px;
@@ -207,7 +256,13 @@ p {
   border-radius: 0px 0px 4px 4px;
 }
 
+.team-member-picture {
+  margin-bottom: 30px;
+}
+
 .team-member-name {
+  font-family: Roboto;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -217,6 +272,7 @@ p {
 }
 
 .team-member-occupation {
+  font-family: Roboto;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -228,9 +284,11 @@ p {
 /* footer */
 .footer {
   background: #2f303a;
+  min-height: 252px;
 }
 
 .logo-inv {
+  display: inline-block;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -239,10 +297,16 @@ p {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: white;
+  padding-left: 15px;
+  padding-top: 60px;
+  margin-bottom: 20px;
 }
 
 .footer-contacts {
+  padding-left: 15px;
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .footer-adress,
@@ -258,6 +322,10 @@ p {
 
 .footer-adress {
   font-style: normal;
+}
+
+.footer-contacts li:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer-mail,
@@ -278,12 +346,32 @@ p {
 /* portfolio */
 
 /* work-examples */
+.work-examples {
+}
+
+.work-examples-container {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
+.portfolio-header {
+}
+
 .work-examples-header {
   display: none;
 }
 
 .work-examples-filter {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.work-examples-filter li:not(:last-child) {
+  margin-right: 8px;
 }
 
 .work-examples-filter-button {
@@ -299,6 +387,8 @@ p {
   border: 0;
   cursor: pointer;
   padding: 6px 22px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .work-examples-filter-button:hover,
@@ -310,34 +400,60 @@ p {
   color: #ffffff;
 }
 
+.work-examples-container-list {
+  padding-bottom: 94px;
+}
+
 .work-examples-list {
+  margin-top: 0;
+  margin-bottom: 0;
   list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .work-example-item {
-  text-decoration: none;
-  box-sizing: border-box;
-  width: 370px;
-  height: 404px;
-  left: 215px;
-  top: 262px;
-  background: #ffffff;
   border: 1px solid #eeeeee;
+  width: 370px;
+  min-height: 404px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+}
+
+.work-example-item:nth-child(n + 7) {
+  margin-bottom: 0;
+}
+
+.work-example-link {
+  text-decoration: none;
+  background: #ffffff;
+  align-items: flex-start;
 }
 
 .work-example-image {
+  margin-bottom: 20px;
+  display: block;
 }
 
 .work-example-header {
+  font-family: Roboto;
   text-decoration: none;
   font-weight: 700;
   font-size: 18px;
   line-height: 36px;
   letter-spacing: 0.06em;
   color: #212121;
+  margin-bottom: 4px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .work-example-text {
+  font-family: Roboto;
+  padding-left: 24px;
+  padding-right: 24px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
