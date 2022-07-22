@@ -18,29 +18,33 @@
     />
   </head>
   <body>
-    <header class="page-header container portfolio-header">
-      <nav class="main-nav">
-        <a lang="en" class="logo" href="index.html"><span class="logo-web-part">Web</span>Studio</a>
-        <ul class="main-nav-list">
-          <li class="main-nav-item">
-            <a class="main-navigation-link" href="">Студия</a>
+    <header class="page-header portfolio-header">
+      <div class="container">
+        <nav class="main-nav">
+          <a lang="en" class="logo" href="index.html"
+            ><span class="logo-web-part">Web</span>Studio</a
+          >
+          <ul class="main-nav-list">
+            <li class="main-nav-item">
+              <a class="main-navigation-link" href="">Студия</a>
+            </li>
+            <li class="main-nav-item">
+              <a class="main-navigation-link" href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="main-nav-item">
+              <a class="main-navigation-link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-contacts">
+          <li class="header-contact-item">
+            <a class="header-contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li class="main-nav-item">
-            <a class="main-navigation-link" href="portfolio.html">Портфолио</a>
-          </li>
-          <li class="main-nav-item">
-            <a class="main-navigation-link" href="">Контакты</a>
+          <li class="header-contact-item">
+            <a class="header-contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
-      </nav>
-      <ul class="header-contacts">
-        <li class="header-contact-item">
-          <a class="header-contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li class="header-contact-item">
-          <a class="header-contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <section class="work-examples">
@@ -53,8 +57,6 @@
             <li><button class="work-examples-filter-button" type="button">Дизайн</button></li>
             <li><button class="work-examples-filter-button" type="button">Маркетинг</button></li>
           </ul>
-        </div>
-        <div class="container work-examples-container-list">
           <h1 class="work-examples-header">Примеры работ</h1>
           <ul class="work-examples-list">
             <li class="work-example-item">
@@ -65,8 +67,10 @@
                   alt="веб-сайт"
                   width="370"
                 />
-                <h2 class="work-example-header">Технокряк</h2>
-                <p class="work-example-text">Веб-сайт</p>
+                <div class="work-ex-text-block">
+                  <h2 class="work-example-header">Технокряк</h2>
+                  <p class="work-example-text">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li class="work-example-item">
@@ -78,8 +82,10 @@
                   alt="постер с изображением игроков баскетбола"
                   width="370"
                 />
-                <h2 class="work-example-header">Постер New Orlean vs Golden Star</h2>
-                <p class="work-example-text">Дизайн</p>
+                <div class="work-ex-text-block">
+                  <h2 class="work-example-header">Постер New Orlean vs Golden Star</h2>
+                  <p class="work-example-text">Дизайн</p>
+                </div>
               </a>
             </li>
             <li class="work-example-item">
@@ -91,8 +97,10 @@
                   alt="логотип ресторана"
                   width="370"
                 />
-                <h2 class="work-example-header">Ресторан Seafood</h2>
-                <p class="work-example-text">Приложение</p>
+                <div class="work-ex-text-block">
+                  <h2 class="work-example-header">Ресторан Seafood</h2>
+                  <p class="work-example-text">Приложение</p>
+                </div>
               </a>
             </li>
             <li class="work-example-item">
@@ -104,8 +112,10 @@
                   alt="наушники"
                   width="370"
                 />
-                <h2 class="work-example-header">Проект Prime</h2>
-                <p class="work-example-text">Маркетинг</p>
+                <div class="work-ex-text-block">
+                  <h2 class="work-example-header">Проект Prime</h2>
+                  <p class="work-example-text">Маркетинг</p>
+                </div>
               </a>
             </li>
             <li class="work-example-item">
@@ -117,8 +127,10 @@
                   alt="дизайн коробок"
                   width="370"
                 />
-                <h2 class="work-example-header">Проект Boxes</h2>
-                <p class="work-example-text">Приложение</p>
+                <div class="work-ex-text-block">
+                  <h2 class="work-example-header">Проект Boxes</h2>
+                  <p class="work-example-text">Приложение</p>
+                </div>
               </a>
             </li>
             <li class="work-example-item">
@@ -130,8 +142,10 @@
                   alt="сайт"
                   width="370"
                 />
-                <h2 lang="en" class="work-example-header">Inspiration has no Borders</h2>
-                <p class="work-example-text">Веб-сайт</p>
+                <div class="work-ex-text-block">
+                  <h2 lang="en" class="work-example-header">Inspiration has no Borders</h2>
+                  <p class="work-example-text">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li class="work-example-item">
@@ -143,8 +157,10 @@
                   alt="журнал"
                   width="370"
                 />
-                <h2 class="work-example-header">Издание Limited Edition</h2>
-                <p class="work-example-text">Дизайн</p>
+                <div class="work-ex-text-block">
+                  <h2 class="work-example-header">Издание Limited Edition</h2>
+                  <p class="work-example-text">Дизайн</p>
+                </div>
               </a>
             </li>
             <li class="work-example-item">
@@ -156,8 +172,10 @@
                   alt="этикетка"
                   width="370"
                 />
-                <h2 class="work-example-header">Проект LAB</h2>
-                <p class="work-example-text">Маркетинг</p>
+                <div class="work-ex-text-block">
+                  <h2 class="work-example-header">Проект LAB</h2>
+                  <p class="work-example-text">Маркетинг</p>
+                </div>
               </a>
             </li>
             <li class="work-example-item">
@@ -169,8 +187,10 @@
                   alt="сайт"
                   width="370"
                 />
-                <h2 lang="en" class="work-example-header">Growing Business</h2>
-                <p class="work-example-text">Приложение</p>
+                <div class="work-ex-text-block">
+                  <h2 lang="en" class="work-example-header">Growing Business</h2>
+                  <p class="work-example-text">Приложение</p>
+                </div>
               </a>
             </li>
           </ul>
