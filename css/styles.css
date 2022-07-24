@@ -21,6 +21,10 @@ ul {
   padding: 0;
 }
 
+header {
+  border-bottom: 1px solid #ececec;
+}
+
 .logo {
   font-family: 'Raleway';
   font-style: normal;
@@ -44,7 +48,6 @@ ul {
 .page-header .container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .main-nav {
@@ -161,7 +164,8 @@ ul {
 }
 
 .section-features {
-  padding: 94px 15px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .features {
@@ -197,7 +201,6 @@ ul {
 }
 
 .work-direction-header {
-  font-family: Roboto;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -212,8 +215,7 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
   display: flex;
-  padding-left: 15px;
-  padding-right: 15px;
+
   justify-content: space-between;
 }
 
@@ -364,11 +366,11 @@ ul {
 
 /* work-examples */
 .work-examples {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .work-examples-container {
-  padding-top: 94px;
-  padding-bottom: 50px;
 }
 
 .portfolio-header {
@@ -413,13 +415,7 @@ ul {
   background: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
   color: #ffffff;
-}
-
-.work-examples-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .work-examples-list {
@@ -433,7 +429,6 @@ ul {
 }
 
 .work-example-item {
-  min-height: 404px;
 }
 
 .work-example-item:nth-child(n + 7) {
